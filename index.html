@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <i> Portflio </a> </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dcolor">
+
+    <!-- NAVBAR -->
+    <nav class="w-full shadow-lg bg-bgcolor ">
+        <div>
+            <div class="flex justify justify-between p-8">
+                <!-- LOGO -->
+                <div class="text-acolor text-lg lg:ml-14 ">
+                    < i > < /a >
+                </div>
+    
+                <!-- MENU ITEMS -->
+                <div class="hidden w-1/2 lg:block">
+                    <ul class="flex text-white justify-evenly">
+                        <li>.home()</li>
+                        <li>.getPortfolio()</li>
+                        <li>.contact()</li>
+                    </ul>
+                </div>
+                <!-- MENU BURGER -->
+                <div class="lg:hidden">
+                    <button id="menuBurger">
+                        <svg class="filter invert"xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            style=" fill:#000000;">
+                            <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BLUR EFFECT -->
+    <div id = "blurEffect" class="hidden bg-black opacity-75 fixed top-0 left-0 right-0 bottom-0">
+
+    </div>
+
+    <!-- SIDEBAR MENU -->
+    <div id = "sidebar" class="hidden duration-500 w-3/5 fixed top-0 bottom-0 right-0 bg-bgcolor shadow-lg">
+        <ul class="text-white ">
+            <li class="mt-6 p-4 ">.home()</li>
+            <li class="p-4">.getPortfolio()</li>
+            <li class="p-4">.contact()</li>
+        </ul>
+    </div>
+
+    <main class="my-2 mx-8">
+        <div class="">
+                <!-- HERO -->
+            <div class=" my-40 py-2 flex justify-center text-center text-bgcolor text-6xl mobile-l:text-8xl lg:text-9xl">
+                "Hello World!"
+            </div>
+            
+            <!-- ABOUT ME -->
+            <div class="m-10">
+                <p class="text-white">
+                    {<br>
+                        <span class="block px-4">
+                            "name" : "Ignatis",<br>
+                            "lastName" : "Ampatzis",<br>
+                            "birthYear" : 1997,<br>
+                            "proffesion" : "Undergraduate Student",<br>
+                        </span>
+                    }
+                </p>
+            </div>
+            <!-- DOWNLOAD CV BTN -->
+            <button class="text-white border-2 rounded-full rounded-xl">
+                <span class="p-4">Download CV</span>
+            </button>
+
+            <!-- PORTFOLIO -->
+            <section class="my-10">
+                <!-- PORTFOLIO CARDS  -->
+                <div class="flex-wrap justify-evenly flex">
+                    <!-- PORFOLIO CARD #1 -->
+                    <div class="border-2 border-ccolor m-2">
+                        <div class="py-4 px-20">
+                            <img src="images/calculator.png" class="md:w-24 md:h-32" alt="calculator">
+                        </div>
+                        <p class="text-bcolor text-justify p-2">
+                            My first ever project written in java. An android calculator
+                        </p>
+                    </div>
+
+                    <!-- PORFOLIO CARD #2 -->
+                    <div class="border-2 border-ccolor m-2">
+                        <div class="py-4 px-20">
+                            <img src="images/calculator.png" class="md:w-24 md:h-32" alt="calculator">
+                        </div>
+                        <p class="text-bcolor text-justify p-2">
+                            My first ever project written in java. An android calculator
+                        </p>
+                    </div>
+
+                    <!-- PORFOLIO CARD #3 -->
+                    <div class="border-2 border-ccolor m-2">
+                        <div class="py-4 px-20">
+                            <img src="images/calculator.png" class="md:w-24 md:h-32" alt="calculator">
+                        </div>
+                        <p class="text-bcolor text-justify p-2">
+                            My first ever project written in java. An android calculator
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div>
+            <div class="text-center">
+                <h1 class="text-acolor m-4">Contact Me</h1>
+                <p class="text-ccolor">Want to contact me directly? <br>
+                    ignaabat@gmail.com
+                </p>
+            </div>
+            
+            <div class="flex justify-center">
+                <form class="my-8 text-center" action="">
+                    <label for="first-name" class="first-name text-bcolor m-4">First name:</label>
+                    <input type="text" placeholder="Your name..." id="first-name"><br>
+        
+                    <label for="last-name" class="last-name text-bcolor m-4">Last name:</label>
+                    <input type="text" placeholder="Your last name..." id="last-name"> <br>
+        
+                    <label for="email" class="email text-bcolor m-8">Email:</label>
+                    <input type="text" placeholder="Your email..."id="email"><br>
+        
+                    <label for="message" class="message text-bcolor m-5">Message:</label>
+                    <input type="text" placeholder="Type your message..." id="message">
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-bgcolor">
+        <div>
+            <div class="text-ccolor text-center mb-4">
+                <p>Follow me on social media.</p>
+                <div class="flex justify-center">
+                    <div class="flex w-28 m-2">
+                        <ul class="flex filter invert">
+                            <li class="mx-2 "><a href=""><img src="images/github.png" alt=""></a></li>
+                            <li class="mx-2 "><a href=""><img src="images/linkedin.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Copy rights reserved &copy; 2021 Ignatis Portfolio </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
