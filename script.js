@@ -14,3 +14,8 @@ blurEffect.onclick = ()=>{
     sidebar.style.right = "-100%"
 };
 
+
+function closeSidebar(){
+    blurEffect.style.display = "none"
+    sidebar.style.right = "-100%"
+}
