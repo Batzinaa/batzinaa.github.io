@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <i> Portflio </a> </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
 <body class="bg-dcolor">
 
     <!-- NAVBAR -->
-    <nav class="w-full shadow-lg bg-bgcolor ">
+    <nav class="fixed top-0 w-full shadow-lg bg-bgcolor ">
         <div>
             <div class="flex justify justify-between p-8">
                 <!-- LOGO -->
-                <div class="text-acolor text-lg lg:ml-14 ">
-                    < i > < /a >
+                <div id="logo" class="text-acolor text-lg lg:ml-14 ">
+                    <a href="http://127.0.0.1:5500/index.html"> < i > < /a ></a>
                 </div>
     
                 <!-- MENU ITEMS -->
-                <div class="hidden w-1/2 lg:block">
-                    <ul class="flex text-white justify-evenly">
-                        <li>.home()</li>
-                        <li>.getPortfolio()</li>
-                        <li>.contact()</li>
+                <div class="hidden w-2/5 lg:block mr-6">
+                    <ul class="flex text-white justify-between ">
+                        <li class="font-roboto ">.home()</li>
+                        <li class="font-roboto ">.getPortfolio()</li>
+                        <li class="font-roboto ">.contact()</li>
                     </ul>
                 </div>
                 <!-- MENU BURGER -->
@@ -47,119 +52,145 @@
     </div>
 
     <!-- SIDEBAR MENU -->
-    <div id = "sidebar" class="hidden duration-500 w-3/5 fixed top-0 bottom-0 right-0 bg-bgcolor shadow-lg">
+    <div id = "sidebar" class="hidden duration-500 w-2/5 fixed top-0 bottom-0 right-0 bg-bgcolor shadow-lg">
         <ul class="text-white ">
-            <li class="mt-6 p-4 ">.home()</li>
-            <li class="p-4">.getPortfolio()</li>
-            <li class="p-4">.contact()</li>
+            <li class="mt-6 p-4 font-roboto ">.home()</li>
+            <li class="p-4 font-roboto ">.getPortfolio()</li>
+            <li class="p-4 font-roboto ">.contact()</li>
         </ul>
     </div>
 
     <main class="my-2 mx-8">
         <div class="">
-                <!-- HERO -->
-            <div class=" my-40 py-2 flex justify-center text-center text-bgcolor text-6xl mobile-l:text-8xl lg:text-9xl">
-                "Hello World!"
+            <!-- HERO -->
+            <div class="font-grotesk my-72 py-3 flex justify-center text-center text-bgcolor text-6xl mobile-l:text-8xl lg:text-9xl">
+                "HELLO WORLD!"
             </div>
-            
+            <section class="border mx-8 mb-10 border-acolor"></section>
             <!-- ABOUT ME -->
-            <div class="m-10">
-                <p class="text-white">
-                    {<br>
-                        <span class="block px-4">
-                            "name" : "Ignatis",<br>
-                            "lastName" : "Ampatzis",<br>
-                            "birthYear" : 1997,<br>
-                            "proffesion" : "Undergraduate Student",<br>
-                        </span>
-                    }
-                </p>
+            <div class="mb-40 ml-5 ">
+                <div class="mx-2">
+                    <p class="text-white">
+                        {<br>
+                            <span class="block px-4">
+                                "name" : "Ignatis",<br>
+                                "lastName" : "Ampatzis",<br>
+                                "birthYear" : 1997,<br>
+                                "proffesion" : "Undergraduate Student",<br>
+                            </span>
+                        }
+                    </p>
+                </div>
+                <!-- DOWNLOAD CV BTN -->
+                <button class="mobile-l:ml-48 ml-28 text-white border-2 rounded-full rounded-xl bg-ccolor">
+                    <p class="p-3">Download CV</p>
+                </button>
             </div>
-            <!-- DOWNLOAD CV BTN -->
-            <button class="text-white border-2 rounded-full rounded-xl">
-                <span class="p-4">Download CV</span>
-            </button>
-
+            <section class=""></section>
             <!-- PORTFOLIO -->
+            <h1 class="text-center text-bgcolor m-4 text-2xl font-semibold">Porfolio</h1>
+            
             <section class="my-10">
                 <!-- PORTFOLIO CARDS  -->
-                <div class="flex-wrap justify-evenly flex">
+                <div class="flex-wrap justify-evenly flex bg-ccolor py-6">
                     <!-- PORFOLIO CARD #1 -->
-                    <div class="border-2 border-ccolor m-2">
-                        <div class="py-4 px-20">
-                            <img src="images/calculator.png" class="md:w-24 md:h-32" alt="calculator">
-                        </div>
-                        <p class="text-bcolor text-justify p-2">
-                            My first ever project written in java. An android calculator
-                        </p>
+                    <div class="lg:w-80 lg:h-96 bg-bgcolor shadow-lg rounded border-2 border-transparent w-52 m-2">
+                        <button>
+                            <div class="py-10 px-20">
+                                <img src="images/calculator.png" class="lg:p-8" alt="calculator">
+                            </div>
+                                <p class="text-acolor p-2 pb-2"><u>Android Calculator</u></p>
+                                <p class="text-ccolor pb-3 px-5 text-justify">My first ever university project app written in java.</p>    
+                        </button>
                     </div>
 
                     <!-- PORFOLIO CARD #2 -->
-                    <div class="border-2 border-ccolor m-2">
-                        <div class="py-4 px-20">
-                            <img src="images/calculator.png" class="md:w-24 md:h-32" alt="calculator">
-                        </div>
-                        <p class="text-bcolor text-justify p-2">
-                            My first ever project written in java. An android calculator
-                        </p>
+                    <div class="lg:w-80 lg:h-96 bg-bgcolor shadow-lg rounded border-2 border-transparent w-52 m-2">
+                        <button>
+                            <div class="py-10 px-20">
+                                <img src="images/calculator.png" class="lg:p-8" alt="calculator">
+                            </div>
+                                <p class="text-acolor p-2 pb-2"><u>Weather Forecast</u></p>
+                                <p class="text-ccolor pb-3 px-5 text-justify">Another team university project learning about API's and working on data requests, deserialization & serialization</p>    
+                        </button>
                     </div>
 
                     <!-- PORFOLIO CARD #3 -->
-                    <div class="border-2 border-ccolor m-2">
-                        <div class="py-4 px-20">
-                            <img src="images/calculator.png" class="md:w-24 md:h-32" alt="calculator">
-                        </div>
-                        <p class="text-bcolor text-justify p-2">
-                            My first ever project written in java. An android calculator
-                        </p>
+                    <div class="lg:w-80 lg:h-96 bg-bgcolor shadow-lg rounded border-2 border-transparent w-52 m-2">
+                        <button>
+                            <div class="py-10 px-20">
+                                <img src="images/calculator.png" class="lg:p-8" alt="calculator">
+                            </div>
+                                <p class="text-acolor p-2 pb-2"><u>Army Manager</u></p>
+                                <p class="text-ccolor pb-3 px-5 text-justify">Uncomplete project which manages soldier's duties.</p>    
+                        </button>
                     </div>
-                </div>
             </section>
             
         </div>
 
         <!-- CONTACT FORM -->
-        <div>
+        <div class="">
             <div class="text-center">
-                <h1 class="text-acolor m-4">Contact Me</h1>
-                <p class="text-ccolor">Want to contact me directly? <br>
-                    ignaabat@gmail.com
+                <h1 class="text-bgcolor m-4 text-2xl font-semibold">Contact Me</h1>
+                <p class="text-ccolor m-3">Want to contact me directly? <br>
+                    <span class="font-medium text-acolor">ignaabat@gmail.com</span>
                 </p>
             </div>
             
-            <div class="flex justify-center">
-                <form class="my-8 text-center" action="">
-                    <label for="first-name" class="first-name text-bcolor m-4">First name:</label>
-                    <input type="text" placeholder="Your name..." id="first-name"><br>
-        
-                    <label for="last-name" class="last-name text-bcolor m-4">Last name:</label>
-                    <input type="text" placeholder="Your last name..." id="last-name"> <br>
-        
-                    <label for="email" class="email text-bcolor m-8">Email:</label>
-                    <input type="text" placeholder="Your email..."id="email"><br>
-        
-                    <label for="message" class="message text-bcolor m-5">Message:</label>
-                    <input type="text" placeholder="Type your message..." id="message">
+            <div class="flex justify-center mb-4">
+                <form id="form" class="my-8 text-center" action="">
+                    <div class="p-3">
+                        <label for="first-name" class="first-name text-bcolor m-4">First name:</label>
+                        <input class="rounded-xl border-2 border-gray-400 w-full p-4" type="text" placeholder="Your name..." id="first-name"><br>
+                    </div>
+
+                    <div class="p-3">
+                        <label for="last-name" class="last-name text-bcolor m-4">Last name:</label>
+                        <input class="rounded-xl border-2 border-gray-400 w-full p-4" type="text" placeholder="Your last name..." id="last-name"> <br>
+                    </div>
+
+                    <div class="p-3">
+                        <label for="email" class="email text-bcolor m-8">Email:</label>
+                        <input class="rounded-xl border-2 border-gray-400 w-full p-4" type="text" placeholder="Your email..."id="email"><br>
+                    </div>
+
+                    <div class="p-3">
+                        <label for="message" class="message text-bcolor m-5">Message:</label>
+                        <!-- <input class="rounded-xl border-2 border-gray-400 w-full px-4 py-20" type="text" placeholder="Type your message..." id="message"> -->
+                        <textarea name="message" form="form" class="rounded-xl border-2 border-gray-400 w-full px-4 py-4 pb-16" placeholder="Type your message..."></textarea>
+                    </div>
+
+                    <button class="mobile-l:ml-48 ml-28 text-white border-2 rounded-full rounded-xl bg-ccolor">
+                        <p class="p-3 px-10">Submit</p>
+                    </button>
+
                 </form>
+
             </div>
+
+            
         </div>
+        
 
     </main>
-    <footer class="bg-bgcolor">
-        <div>
+    <footer class="bg-bgcolor w-full p-2 ">
+        <div >
             <div class="text-ccolor text-center mb-4">
                 <p>Follow me on social media.</p>
                 <div class="flex justify-center">
                     <div class="flex w-28 m-2">
                         <ul class="flex filter invert">
-                            <li class="mx-2 "><a href=""><img src="images/github.png" alt=""></a></li>
-                            <li class="mx-2 "><a href=""><img src="images/linkedin.png" alt=""></a></li>
+                            <li class="mx-2 "><a href="https://github.com/Batzinaa" target="blank"><img src="images/github.png" alt=""></a></li>
+                            <li class="mx-2 "><a href="https://www.linkedin.com/in/ignatios-ampatzis/" target="blank"><img src="images/linkedin.png" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
                 <p>Copy rights reserved &copy; 2021 Ignatis Portfolio </p>
             </div>
         </div>
+
+        
     </footer>
 
     <script src="script.js"></script>

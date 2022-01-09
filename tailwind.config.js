@@ -13,6 +13,10 @@ module.exports = {
       screens:{
         "mobile-l":"425px",
       },
+      fontFamily:{
+        grotesk: "'Space Grotesk', sans-serif",
+        roboto: "'Roboto Mono', monospace"
+      }
     },
   },
   variants: {
